@@ -17,7 +17,7 @@ if hist_button: # al hacer clic en el botón
    
    
 if regression_button:
-    0
+    
     st.write('Creación de un gráfico de regresión entre odómetro y precio')
     
     fig_regression = px.scatter(car_data, x="odometer", y="price")
