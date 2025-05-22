@@ -4,7 +4,7 @@ import streamlit as st
      
 car_data = pd.read_csv('vehicles_us.csv') # leer los datos
 
-st.title('Creación de un gráfico de regresión entre odómetro y precio')
+st.title('Creación de gráficos de regresión e histograma de la venta de autos')
 
 # crear botón
 hist_button = st.button('Construir histograma') # crear un botón
@@ -12,7 +12,7 @@ sct_button = st.button('Construir Scatter') # crear un botón
 
 if hist_button: # al hacer clic en el botón
    # escribir un mensaje
-   st.write('Creación de un histograma para el conjunto de datos de anuncios de venta de coches en EEUU')
+   st.write('Creación de un histograma para el conjunto de datos de anuncios de venta de autos en EEUU')
    # crear un histograma
    fig = px.histogram(car_data, x="odometer")
    # mostrar un gráfico Plotly interactivo
